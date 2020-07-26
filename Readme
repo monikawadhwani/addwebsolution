@@ -1,0 +1,21 @@
+#updateStock
+
+UpdateStock module is compatible with Prestashop 1.7 and its all series and prestashop 1.6.
+
+Please go to prestashop store in backend and install the module zip.
+
+For test the module:
+
+1. When you place any order in that store, after successfully completing of order it will print you json data with product item and quantity. 
+This json is result of webhook that use to send the data in inventory management system.
+You can check in postman also using this url: http://localhost/prestashop/modules/updateStock/sendStock.php
+
+prestashop will be replace from folder in which you have prestashop.
+
+2. Cron file to test update Prestashop with inventory quantity.
+You can test using this url: http://localhost/prestashop/modules/updateStock/cron.php
+As we don't have any API, I created a sample json file and use that sample file to update stock in prestashop. Json file name is "sample.json",
+you can change data in json and test.
+
+For set the time to run cron on 12 AM, I use the cronjob module of prestashop, when module install, it will add entry in cron job module for 12 AM for this cron.
+
