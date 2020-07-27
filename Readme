@@ -9,6 +9,7 @@ For test the module:
 1. When you place any order in that store, after successfully completing of order it will print you json data with product item and quantity. 
 This json is result of webhook that use to send the data in inventory management system.
 You can check in postman also using this url: http://localhost/prestashop/modules/updateStock/sendStock.php
+Raw data: item_id and qty
 
 prestashop will be replace from folder in which you have prestashop.
 
